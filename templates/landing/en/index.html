@@ -1,0 +1,369 @@
+{% extends 'landing/en/base.html' %}
+{% load static %}
+
+{% block title %}ParfumCity — Niche and Luxury Perfumery{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>The Art of Scent<br>in the Heart of the Capital</h1>
+                <p>Luxury and niche come together to offer rare and exquisite fragrances from around the world.
+Each perfume is carefully selected for those who value individuality and style.
+Choose a fragrance that highlights your character and becomes part of your story.
+Ready to discover your perfect scent?</p>
+                <a href="https://wa.me/994509952727" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Contact us on Whatsapp
+                </a>
+            </div>
+            <div class="hero-image">
+                <div class="slider-container" id="hero-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/hero/perfume-1.jpg' %}" alt="Парфюм 1">
+                            </div>
+
+                        </div>
+                        
+                        <!-- Кнопки навигации -->
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Индикаторы -->
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about">
+            <div class="about-text">
+                <h2>About ParfumCity Boutique</h2>
+                <div class="about-content">
+                    <p>ParfumCity is a space where perfumery becomes art. We have curated a collection of the most exquisite niche and luxury fragrances from around the world.</p>
+                    <p>Our mission is to help you find that signature scent that becomes your second skin and reflects your individuality.</p>
+                </div>
+                <div class="highlight-box">
+                    <p>"A perfume is an invisible, yet unforgettable fashion accessory" — Coco Chanel</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="slider-container" id="about-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-1.jpg' %}" alt="Интерьер бутика 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-2.jpg' %}" alt="Интерьер бутика 2">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-3.jpg' %}" alt="Интерьер бутика 3">
+                            </div>
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brands Section -->
+<section class="brands" id="brands">
+    <div class="container">
+        <h2>Featured Brands</h2>
+        <div class="brand-cards">
+            <div class="brand-card">
+                <h3>Niche Perfume Houses</h3>
+                <ul class="brand-list">
+                    <li>Byredo</li>
+                    <li>Le Labo</li>
+                    <li>Diptyque</li>
+                    <li>Frédéric Malle</li>
+                    <li>Serge Lutens</li>
+                </ul>
+                <p>Unique fragrances created as works of art, using rare ingredients.</p>
+            </div>
+            <div class="brand-card">
+                <h3>Luxury Brands</h3>
+                <ul class="brand-list">
+                    <li>Creed</li>
+                    <li>Tom Ford</li>
+                    <li>Maison Francis Kurkdjian</li>
+                    <li>Roja Parfums</li>
+                    <li>Kilian</li>
+                </ul>
+                <p>Exclusive collections of premium brands not found in regular perfume stores.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advantages Section -->
+<section class="advantages" id="advantages">
+    <div class="container">
+        <div class="advantages-content">
+            <div class="advantages-text">
+                <h2>Why Choose Us</h2>
+                <ul class="checklist">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Authenticity Guaranteed</h4>
+                            <p>All fragrances are sourced directly from manufacturers or official distributors.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Professional Consultations</h4>
+                            <p>Our experts will help you find a fragrance that perfectly matches your style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Personalized Approach</h4>
+                            <p>We consider your preferences, personality, and even mood when selecting perfumes.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Exclusivity</h4>
+                            <p>Most fragrances in our boutique are not available in other city stores.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="advantages-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-gift"></i>
+                    <span>Gift Wrapping</span>
+                    <span>Eco-friendly materials, calligraphy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fragrance Selection -->
+<section class="selection" id="selection">
+    <div class="container">
+        <h2>How We Select Your Fragrance</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Consultation</h4>
+                <p>A conversation with a perfume expert to determine your preferences</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Selection</h4>
+                <p>Choosing several fragrances for testing that match the season and your mood</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Testing</h4>
+                <p>Testing the fragrances throughout the day to evaluate how they develop on your skin</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Final Choice</h4>
+                <p>Final selection and recommendations on how to properly apply the fragrance</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Atmosphere Section -->
+<section class="atmosphere" id="atmosphere">
+    <div class="container">
+        <div class="atmosphere-content">
+            <div class="atmosphere-text">
+                <h2>Boutique Atmosphere</h2>
+                <div class="atmosphere-icons">
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h4>Tranquility</h4>
+                        <p>Privacy and silence for comfortable selection</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>Ambience</h4>
+                        <p>Relaxing atmosphere of a premium space</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h4>Comfort</h4>
+                        <p>Cozy area for unhurried fragrance testing</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h4>Cozyness</h4>
+                        <p>Coffee and tea during your consultation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="atmosphere-image">
+                <div class="slider-container" id="atmosphere-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-1.jpg' %}" alt="Атмосфера 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-2.jpg' %}" alt="Атмосфера 2">
+                            </div>
+
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts Section -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2>Contact Information</h2>
+        
+        <div class="contacts-grid">
+            <!-- Map -->
+            <div class="contacts-map">
+                <iframe 
+                    src="https://www.google.com/maps?q=Parfum+City+Baku&output=embed"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contacts-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>111 Nizami St, Baku</p>
+                        <p class="contact-note">Surrounded by 5-star hotels, and restaurants, and opposite the Landmark business complex</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Sunday</p>
+                        <p>11:00 AM - 9:00 PM</p>
+                        <p class="contact-note">Open daily, no breaks</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+994509952727">+994 (50) 995-27-27</a></p>
+                        <p class="contact-note">For consultation appointments</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@parfumcity.az">info@parfumcity.az</a></p>
+                        <p class="contact-note">For general inquiries</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p><a href="https://www.facebook.com/people/Parfum-City/61556832591701/" target="_blank">@parfum-city</a></p>
+                        <p class="contact-note">Quick contact and fragrance selection</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/parfumcity.az/" target="_blank">@parfumcity.az</a></p>
+                        <p class="contact-note">News and new arrivals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">ParfumCity</div>
+            <p class="footer-tagline">Unique luxury and niche fragrances.
+Each perfume is designed to deliver emotions, style, and unforgettable impressions.</p>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/parfum-city/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/parfumcity.az/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/994509952727" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© {% now "Y" %} All rights reserved</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}

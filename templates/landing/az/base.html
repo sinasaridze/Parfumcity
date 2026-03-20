@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParfumCity — {% block title %}Nİş və Lüks Parfumeriya{% endblock %}</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Əsas Stil -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header hissəsi -->
+    {% include 'landing/az/header.html' %}
+    
+    <!-- Əsas Məzmun -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-- Əsas Skriptlər -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/slider.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

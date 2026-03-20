@@ -1,0 +1,13 @@
+{% extends 'landing/az/base.html' %}
+
+{% block title %}Server Xətası{% endblock %}
+
+{% block content %}
+<div class="error-page">
+    <div class="container">
+        <h1>500</h1>
+        <p>Texniki nasazlıq baş verdi</p>
+        <a href="{% url 'landing_page_az' %}" class="btn">Ana Səhifəyə Qayıt</a>
+    </div>
+</div>
+{% endblock %}

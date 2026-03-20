@@ -1,0 +1,13 @@
+{% extends 'landing/en/base.html' %}
+
+{% block title %}Server error{% endblock %}
+
+{% block content %}
+<div class="error-page">
+    <div class="container">
+        <h1>500</h1>
+        <p>Internal server error</p>
+        <a href="{% url 'landing_page_en' %}" class="btn">Return to homepage</a>
+    </div>
+</div>
+{% endblock %}

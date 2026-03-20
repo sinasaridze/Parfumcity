@@ -1,0 +1,13 @@
+{% extends 'landing/en/base.html' %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<div class="error-page">
+    <div class="container">
+        <h1>404</h1>
+        <p>The page you are looking for doesn't exist</p>
+        <a href="{% url 'landing_page_en' %}" class="btn">Return to Homepage</a>
+    </div>
+</div>
+{% endblock %}

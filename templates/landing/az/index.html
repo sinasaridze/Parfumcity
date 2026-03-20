@@ -1,0 +1,369 @@
+{% extends 'landing/az/base.html' %}
+{% load static %}
+
+{% block title %}ParfumCity — Niş və Lüks Parfumeriya{% endblock %}
+
+{% block content %}
+<!-- Hero bölməsi -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Paytaxtın tam mərkəzində<br>ətir sənəti</h1>
+                <p>Lüks və niş birləşərək dünyanın ən nadir və zərif ətirlərini təqdim edir.
+Hər bir ətir fərdiliyini və üslubunu qiymətləndirənlər üçün diqqətlə seçilmişdir.
+Xarakterinizi vurğulayacaq və sizin hekayənizin bir hissəsi olacaq ətiri seçin.
+Öz ideal ətirinizi kəşf etməyə hazırsınız?</p>
+                <a href="https://wa.me/994509952727" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Whatsapp-da əlaqə
+                </a>
+            </div>
+             <div class="hero-image">
+                <div class="slider-container" id="hero-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/hero/perfume-1.jpg' %}" alt="Парфюм 1">
+                            </div>
+
+                        </div>
+                        
+                        <!-- Кнопки навигации -->
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Индикаторы -->
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Haqqımızda bölməsi -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about">
+            <div class="about-text">
+                <h2>ParfumCity Butiki Haqqında</h2>
+                <div class="about-content">
+                    <p>ParfumCity — parfumeriyanın sənətə çevrildiyi bir məkandır. Biz dünyanın hər yerindən ən nəfis niş və lüks ətirləri bir araya toplamışıq.</p>
+                    <p>Missiyamız — sizə ikinci dəriyə çevriləcək və fərdiliyinizi əks etdirəcək o imza ətiri tapmağa kömək etməkdir.</p>
+                </div>
+                <div class="highlight-box">
+                    <p>"Ətir — görünməz, lakin unudulmaz bir aksesuardır" — Coco Chanel</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="slider-container" id="about-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-1.jpg' %}" alt="Интерьер бутика 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-2.jpg' %}" alt="Интерьер бутика 2">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-3.jpg' %}" alt="Интерьер бутика 3">
+                            </div>
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brendlər bölməsi -->
+<section class="brands" id="brands">
+    <div class="container">
+        <h2>Təqdim Olunan Brendlər</h2>
+        <div class="brand-cards">
+            <div class="brand-card">
+                <h3>Niş Ətir Evləri</h3>
+                <ul class="brand-list">
+                    <li>Byredo</li>
+                    <li>Le Labo</li>
+                    <li>Diptyque</li>
+                    <li>Frédéric Malle</li>
+                    <li>Serge Lutens</li>
+                </ul>
+                <p>Nadir inqrediyentlərlə, sənət əsəri kimi yaradılmış unikal ətirlər.</p>
+            </div>
+            <div class="brand-card">
+                <h3>Lüks Brendlər</h3>
+                <ul class="brand-list">
+                    <li>Creed</li>
+                    <li>Tom Ford</li>
+                    <li>Maison Francis Kurkdjian</li>
+                    <li>Roja Parfums</li>
+                    <li>Kilian</li>
+                </ul>
+                <p>Adi parfumeriya mağazalarında olmayan premium brendlərin eksklüziv kolleksiyaları.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Üstünlüklər bölməsi -->
+<section class="advantages" id="advantages">
+    <div class="container">
+        <div class="advantages-content">
+            <div class="advantages-text">
+                <h2>Niyə Bizi Seçirlər</h2>
+                <ul class="checklist">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Orijinallıq Zəmanəti</h4>
+                            <p>Bütün ətirlər birbaşa istehsalçılardan və ya rəsmi distribütorlardan təmin edilir.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Peşəkar Məsləhətlər</h4>
+                            <p>Ekspertlərimiz sizin tərzinizə mükəmməl uyğun gələn ətiri tapmağa kömək edəcək.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Fərdi Yanaşma</h4>
+                            <p>Ətir seçimində sizin zövqünüzü, xarakterinizi və hətta əhvalınızı nəzərə alırıq.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Eksklüzivlik</h4>
+                            <p>Butikimizdəki ətirlərin çoxu şəhərin digər mağazalarında mövcud deyil.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="advantages-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-gift"></i>
+                    <span>Hədiyyə qablaşdırması</span>
+                    <span>Eko-materiallar, xəttatlıq</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ətir seçimi -->
+<section class="selection" id="selection">
+    <div class="container">
+        <h2>Ətiri Necə Seçirik</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Məsləhətləşmə</h4>
+                <p>Sizin üstünlüklərinizi müəyyən etmək üçün ətir eksperti ilə söhbət</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Seçim</h4>
+                <p>Mövsümə və əhvalınıza uyğun bir neçə ətirin sınaq üçün seçilməsi</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Sınaq</h4>
+                <p>Ətirlərin dəridə necə inkişaf etdiyini qiymətləndirmək üçün gün ərzində sınanması</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Son Qərar</h4>
+                <p>Yekun seçim və ətiri düzgün tətbiq etməklə bağlı tövsiyələr</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Atmosfer bölməsi -->
+<section class="atmosphere" id="atmosphere">
+    <div class="container">
+        <div class="atmosphere-content">
+            <div class="atmosphere-text">
+                <h2>Butikin Atmosferi</h2>
+                <div class="atmosphere-icons">
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h4>Sükunət</h4>
+                        <p>Rahat seçim üçün təklik və sakitlik</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>Ambians</h4>
+                        <p>Premium məkanın rahatladıcı atmosferi</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h4>Komfort</h4>
+                        <p>Ətirləri yavaş-yavaş sınamaq üçün rahat zona</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h4>Rahatlıq</h4>
+                        <p>Məsləhətləşmə zamanı qəhvə və çay</p>
+                    </div>
+                </div>
+            </div>
+            <div class="atmosphere-image">
+                <div class="slider-container" id="atmosphere-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-1.jpg' %}" alt="Атмосфера 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-2.jpg' %}" alt="Атмосфера 2">
+                            </div>
+
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Əlaqə bölməsi -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2>Əlaqə Məlumatları</h2>
+        
+        <div class="contacts-grid">
+            <!-- Xəritə -->
+            <div class="contacts-map">
+                <iframe 
+                    src="https://www.google.com/maps?q=Parfum+City+Baku&output=embed"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Əlaqə məlumatları -->
+            <div class="contacts-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Ünvan</h4>
+                        <p>Nizami küçəsi, 111, Baki</p>
+                        <p class="contact-note">5 ulduzlu otellər və restoranlarla əhatə olunmuş, Landmark biznes kompleksinin qarşısında yerləşir</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>İş saatları</h4>
+                        <p>Bazar ertəsi - Bazar</p>
+                        <p>11:00 - 21:00</p>
+                        <p class="contact-note">Hər gün, fasiləsiz</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+994509952727">+994 (50) 995-27-27</a></p>
+                        <p class="contact-note">Məsləhətləşmə üçün qeydiyyat</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@parfumcity.az">info@parfumcity.az</a></p>
+                        <p class="contact-note">Ümumi suallar üçün</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p><a href="https://www.facebook.com/people/Parfum-City/61556832591701/" target="_blank">@parfum-city</a></p>
+                        <p class="contact-note">Sürətli əlaqə və ətir seçimi</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/parfumcity.az/" target="_blank">@parfumcity.az</a></p>
+                        <p class="contact-note">Xəbərlər və yeni gələnlər</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">ParfumCity</div>
+            <p class="footer-tagline">Unikal lüks və niş ətirlər.
+Hər bir ətir duyğular, üslub və unudulmaz təəssüratlar bəxş etmək üçün yaradılmışdır.</p>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/parfum-city/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/parfumcity.az/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/994509952727" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© {% now "Y" %} Bütün hüquqlar qorunur</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load static %}
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo with image -->
+            <div class="header-logo">
+                <a href="{% url 'landing_page' %}#hero">
+                    <img src="{% static 'images/logo.png' %}" alt="ParfumCity" class="logo-image">
+                    <span class="logo-text">ParfumCity</span>
+                </a>
+            </div>
+            
+            <!-- Section navigation -->
+            <nav class="header-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">About Us</a></li>
+                    <li class="nav-item"><a href="#brands">Brands</a></li>
+                    <li class="nav-item"><a href="#advantages">Advantages</a></li>
+                    <li class="nav-item"><a href="#selection">Selection</a></li>
+                    <li class="nav-item"><a href="#atmosphere">Atmosphere</a></li>
+                    <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Language switcher -->
+            <div class="language-switcher">
+                <a href="{% url 'landing_page' %}" class="lang-link">RU</a>
+                <a href="{% url 'landing_page_en' %}" class="lang-link active">EN</a>
+                <a href="{% url 'landing_page_az' %}" class="lang-link">AZ</a>
+            </div>
+        </div>
+    </div>
+</header>

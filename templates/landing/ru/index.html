@@ -1,0 +1,369 @@
+{% extends 'landing/ru/base.html' %}
+{% load static %}
+
+{% block title %}ParfumCity — Нишевая и люксовая парфюмерия{% endblock %}
+
+{% block content %}
+<!-- Hero блок с слайдером -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Искусство аромата<br>в самом сердце столицы</h1>
+                <p>Люкс и ниша объединяются, чтобы предложить редкие и изысканные ароматы со всего мира.
+Каждый парфюм тщательно подобран для ценителей индивидуальности и стиля.
+Выберите аромат, который подчеркнёт ваш характер и станет частью вашей истории.
+Готовы открыть для себя свой идеальный аромат?</p>
+                <a href="https://wa.me/994509952727" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Связаться в Whatsapp
+                </a>
+            </div>
+            <div class="hero-image">
+                <div class="slider-container" id="hero-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/hero/perfume-1.jpg' %}" alt="Парфюм 1">
+                            </div>
+
+                        </div>
+                        
+                        <!-- Кнопки навигации -->
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Индикаторы -->
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- О магазине с слайдером -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about">
+            <div class="about-text">
+                <h2>О бутике ParfumCity</h2>
+                <div class="about-content">
+                    <p>ParfumCity — это пространство, где парфюмерия становится искусством. Мы собрали коллекцию самых изысканных нишевых и люксовых ароматов со всего мира.</p>
+                    <p>Наша миссия — помочь вам найти тот самый аромат, который станет вашей второй кожей и будет отражать вашу индивидуальность.</p>
+                </div>
+                <div class="highlight-box">
+                    <p>«Аромат — это невидимая, но незабываемая мода» — Коко Шанель</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="slider-container" id="about-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-1.jpg' %}" alt="Интерьер бутика 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-2.jpg' %}" alt="Интерьер бутика 2">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/about/interior-3.jpg' %}" alt="Интерьер бутика 3">
+                            </div>
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Бренды -->
+<section class="brands" id="brands">
+    <div class="container">
+        <h2>Представленные бренды</h2>
+        <div class="brand-cards">
+            <div class="brand-card">
+                <h3>Нишевые парфюмерные дома</h3>
+                <ul class="brand-list">
+                    <li>Byredo</li>
+                    <li>Le Labo</li>
+                    <li>Diptyque</li>
+                    <li>Frédéric Malle</li>
+                    <li>Serge Lutens</li>
+                </ul>
+                <p>Уникальные ароматы, созданные как произведения искусства, с использованием редких ингредиентов.</p>
+            </div>
+            <div class="brand-card">
+                <h3>Люксовые бренды</h3>
+                <ul class="brand-list">
+                    <li>Creed</li>
+                    <li>Tom Ford</li>
+                    <li>Maison Francis Kurkdjian</li>
+                    <li>Roja Parfums</li>
+                    <li>Kilian</li>
+                </ul>
+                <p>Эксклюзивные коллекции премиальных брендов, которые не найти в обычных парфюмерных магазинах.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section class="advantages" id="advantages">
+    <div class="container">
+        <div class="advantages-content">
+            <div class="advantages-text">
+                <h2>Почему выбирают нас</h2>
+                <ul class="checklist">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Гарантия подлинности</h4>
+                            <p>Все ароматы поставляются напрямую от производителей или официальных дистрибьюторов.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Профессиональные консультации</h4>
+                            <p>Наши эксперты помогут подобрать аромат, идеально соответствующий вашему образу.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Индивидуальный подход</h4>
+                            <p>Учитываем ваши предпочтения, характер и даже настроение при выборе парфюма.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Эксклюзивность</h4>
+                            <p>Большинство ароматов в нашем бутике не представлены в других магазинах города.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="advantages-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-gift"></i>
+                    <span>Подарочная упаковка</span>
+                    <span>Эко-материалы, каллиграфия</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подбор аромата -->
+<section class="selection" id="selection">
+    <div class="container">
+        <h2>Как мы подбираем аромат</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Консультация</h4>
+                <p>Беседа с парфюмерным экспертом для определения ваших предпочтений</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Подбор</h4>
+                <p>Выбор нескольких ароматов для тестирования, соответствующих сезону и настроению</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Тестирование</h4>
+                <p>Тестирование ароматов в течение дня, чтобы оценить их развитие на коже</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Финальный выбор</h4>
+                <p>Окончательный выбор и рекомендации по правильному нанесению аромата</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Атмосфера с слайдером -->
+<section class="atmosphere" id="atmosphere">
+    <div class="container">
+        <div class="atmosphere-content">
+            <div class="atmosphere-text">
+                <h2>Атмосфера бутика</h2>
+                <div class="atmosphere-icons">
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h4>Тишина</h4>
+                        <p>Уединение и тишина для комфортного выбора</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>Атмосфера</h4>
+                        <p>Расслабляющая атмосфера премиального пространства</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h4>Комфорт</h4>
+                        <p>Удобная зона для неспешного тестирования ароматов</p>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h4>Уют</h4>
+                        <p>Кофе и чай во время консультации</p>
+                    </div>
+                </div>
+            </div>
+            <div class="atmosphere-image">
+                <div class="slider-container" id="atmosphere-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-1.jpg' %}" alt="Атмосфера 1">
+                            </div>
+                            <div class="slider-slide">
+                                <img src="{% static 'images/atmosphere/lifestyle-2.jpg' %}" alt="Атмосфера 2">
+                            </div>
+
+                        </div>
+                        
+                        <button class="slider-btn prev" aria-label="Предыдущий слайд">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Следующий слайд">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        
+        <div class="contacts-grid">
+            <!-- Карта -->
+            <div class="contacts-map">
+                <iframe 
+                    src="https://www.google.com/maps?q=Parfum+City+Baku&output=embed"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Контактная информация -->
+            <div class="contacts-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Адрес</h4>
+                        <p>Баку, ул. Низами, 111</p>
+                        <p class="contact-note">Окружён 5-звёздочными отелями и ресторанами, напротив бизнес-комплекса Landmark </p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Часы работы</h4>
+                        <p>Понедельник - Воскресенье</p>
+                        <p>11:00 - 21:00</p>
+                        <p class="contact-note">Без перерывов, ежедневно</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Телефон</h4>
+                        <p><a href="tel:+994509952727">+994 (50) 995-27-27</a></p>
+                        <p class="contact-note">Для записи на консультацию</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@parfumcity.az">info@parfumcity.az</a></p>
+                        <p class="contact-note">Для общих вопросов</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p><a href="https://www.facebook.com/people/Parfum-City/61556832591701/" target="_blank">@parfum-city</a></p>
+                        <p class="contact-note">Быстрая связь и подбор ароматов</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/parfumcity.az/" target="_blank">@parfumcity.az</a></p>
+                        <p class="contact-note">Новости и новинки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">ParfumCity</div>
+            <p class="footer-tagline">Уникальные люксовые и нишевые ароматы.
+Каждый парфюм создан для того, чтобы дарить эмоции, стиль и незабываемые впечатления.</p>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/parfum-city/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/parfumcity.az/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/994509952727" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© {% now "Y" %} Все права защищены</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}

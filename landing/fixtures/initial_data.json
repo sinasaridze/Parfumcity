@@ -1,0 +1,92 @@
+[
+    {
+        "model": "landing.section",
+        "pk": 1,
+        "fields": {
+            "section_type": "hero",
+            "title": "Оригинальная нишевая и люксовая парфюмерия от ведущих мировых брендов",
+            "subtitle": "Подбор ароматов, консультации и гарантия подлинности",
+            "content": "",
+            "button_text": "Подобрать аромат",
+            "button_link": "#consultation",
+            "highlight_text": "",
+            "order": 1,
+            "is_active": true
+        }
+    },
+    {
+        "model": "landing.section",
+        "pk": 2,
+        "fields": {
+            "section_type": "about",
+            "title": "О магазине",
+            "subtitle": "",
+            "content": "Мы — бутик авторской парфюмерии, где каждый аромат рассказывает уникальную историю. Наша миссия — помочь вам найти тот самый scent, который станет не просто запахом, а частью личности.\n\nВ нашем пространстве нет места масс-маркету и стандартным решениям. Только изысканные композиции, созданные парфюмерами с мировым именем.",
+            "button_text": "",
+            "button_link": "",
+            "highlight_text": "Более 200 эксклюзивных ароматов в коллекции от 40 нишевых брендов",
+            "order": 2,
+            "is_active": true
+        }
+    },
+    {
+        "model": "landing.section",
+        "pk": 3,
+        "fields": {
+            "section_type": "brands",
+            "title": "С какими брендами работаем",
+            "subtitle": "",
+            "content": "Работаем с самыми уважаемыми независимыми парфюмерными домами, которые создают ароматы ограниченными тиражами. Каждый бренд в нашей коллекции выбран за уникальный подход к созданию парфюма.",
+            "button_text": "",
+            "button_link": "",
+            "highlight_text": "",
+            "order": 3,
+            "is_active": true
+        }
+    },
+    {
+        "model": "landing.section",
+        "pk": 4,
+        "fields": {
+            "section_type": "advantages",
+            "title": "Почему выбирают нас",
+            "subtitle": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "highlight_text": "",
+            "order": 4,
+            "is_active": true
+        }
+    },
+    {
+        "model": "landing.section",
+        "pk": 5,
+        "fields": {
+            "section_type": "selection",
+            "title": "Как мы подбираем аромат",
+            "subtitle": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "highlight_text": "",
+            "order": 5,
+            "is_active": true
+        }
+    },
+    {
+        "model": "landing.section",
+        "pk": 6,
+        "fields": {
+            "section_type": "atmosphere",
+            "title": "Атмосфера и стиль",
+            "subtitle": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "highlight_text": "",
+            "order": 6,
+            "is_active": true
+        }
+    }
+]
